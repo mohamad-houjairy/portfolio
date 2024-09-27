@@ -1,0 +1,892 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #afafaf;
+    z-index: 100;
+    background: #000000ec;
+}
+/*////////////////////////////////////////////////////////////////Home//////////////////////////////////////////////////////////////////*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 100%;
+}
+
+header nav .logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+header nav .logo span {
+    color:#00fc71;
+    
+}
+
+header nav .link {
+    display: flex;
+}
+
+header nav .link li {
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+}
+
+header nav .link li::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #00fc71;
+    transition: 0.3s;
+}
+
+header nav .link li:hover::after,
+header nav .link li.active::after {
+    width: 100%;
+}
+
+header nav .link li a {
+    color: #c8c6c6;
+    font-size: 17px;
+}
+
+header nav .social-links a i {
+    color: #00fc71;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+header nav .social-links a i:hover {
+    color: #ffffff;
+}
+
+.hero-sec {
+    height: 100vh;
+    background: url(IMAGE/wlc-bg1.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.hero-sec .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-sec .container .div-text {
+    width: 50%;
+}
+
+.hero-sec .container h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-sec .container .div-text span {
+   color:#00fc71;
+    font-size: 2.5rem;
+font-weight: 700;
+-webkit-text-stroke: .7px var(--main-color);
+
+}
+
+.hero-sec .container .div-text p {
+    color: #c8c6c6;
+    font-size: 18px;
+    margin: 10px 0 50px;
+    line-height: 1.7;
+}
+
+.hero-sec .container .div-text .btn {
+    color: #fff;
+    border: 1px solid #00fc71;
+    background-color: #00fc71;
+    padding: 14px 40px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero-sec .container .div-text .btn:hover {
+    background: transparent;
+}
+
+.hero-sec .container .div-img {
+    width: 35%;
+    height: 83%;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+}
+
+.hero-sec .container .div-img img {
+    width: 90%;
+    height: 100%;
+}
+
+#btnmenu {
+    display: none;
+}
+/*////////////////////////////////////////////////////////education////////////////////////////////////////////////////////////////////*/
+.education {
+    height: 100%;
+    background: url(IMAGE/wlc-bg1.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education h2 {
+    font-size: 50px;
+    color: #00fc71;
+    margin: 0;
+}
+
+.education span {
+    color: white;
+}
+
+.education-row {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.education-column {
+    margin-left: -50px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 0px; 
+    width: 45%; 
+    position: relative;
+    padding-top: 10%;
+}
+
+.education-box {
+    border-left: 4px solid #00fc71;
+    padding-left: 20px; 
+    position: relative;
+    margin-left: -0px; 
+    padding-right: 0px;
+}
+
+.education-box::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 5%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00fc71;
+}
+
+.education-content {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #00fc71;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow .5s ease-in-out, background-color 0.4s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.education-content:hover {
+    background-color: #3cff00ad;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.342),
+                0 0 30px rgb(255, 255, 255),
+                0 0 40px rgba(252, 253, 252, 0.374);
+}
+
+.un {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.content p {
+    margin: 10px 0 0;
+    color: #ccc;
+}
+.education-column h4{
+   font-size:x-large;
+   position: relative;
+   bottom: 30px;
+   left: 30px;
+}
+.education h2{
+    position: absolute;
+    bottom: -70px;
+}
+/*///////////////////////////////////////////////////////Skills/////////////////////////////////////////////////////////////////////////*/
+.skl{
+background: url(IMAGE/wlc-bg1.jpg);
+height: 100%;
+
+}
+.lang h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #00fc71;
+    padding-top:15px;
+}
+.lang span{
+    color: white;
+}
+.box{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.box h3 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+
+}
+.box1 , .box2 {
+    position: relative;
+    width: 50%;
+    height: 0%;
+    margin: 10px ;
+    padding: 10px 10px;
+    border: 2px solid #00fc71;
+    border-radius: 10px;
+}
+
+
+.box .lang{
+    padding: rem 0;
+}
+.box .lang .bar{
+    height: 1.2rem;
+    width: 95%;
+    border-radius: .4rem;
+    border: .1rem solid #00fc71 ;
+    padding: 5px ;
+    margin: 20px;
+    
+}
+.box .lang .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .1rem;
+    background-color: #00fc71;
+}
+#HTML .bar span{
+    width: 95%;
+}
+#CSS .bar span{
+    width: 80%;
+}
+#java-script .bar span{
+    width: 75%;
+}
+#java .bar span{
+    width: 80%;
+}
+#java .bar span{
+    width: 80%;
+}
+#C .bar span{
+    width: 85%;
+}
+#php .bar span{
+    width: 80%;
+}
+#React .bar span{
+    width: 85%;
+}
+#Bootstrap .bar span{
+    width: 90%;
+}
+
+/*///////////////////////////////////////////////////////contact//////////////////////////////////////////////////////////////////////*/
+.contact{
+    background: url(IMAGE/wlc-bg1.jpg);
+    color: white;
+    height: 100%;
+
+}
+
+
+.contact .social-links{
+ position: relative;
+ bottom:  -80px;
+ transition: 7s;
+}
+.contact .social-links a{
+transition: .7s;
+}
+.contact .social-icon{
+    margin: 100px;
+    font-size: 20px;
+}
+.contact .social-links a :hover{
+    font-size: 58px;
+    color: #ffffff;
+}
+.contact .cont-icon{
+position: relative;
+bottom: 200px  ;
+margin: px;
+
+ 
+}
+.contact .social-links a{
+    
+        font-size: 38px;
+       margin: 10px;
+        color: #00fc71;
+        transition: .3ms;
+    
+}
+.contact .cont-icon h3{
+    font-size: 20px;
+    position: relative;
+margin-left: 10px;
+    bottom: 70px;
+    color: #afafaf;
+}
+.contact .cont-icon h3 span{
+    color: #f1f4f3;
+    position: relative;
+    bottom: 5px;
+}
+.contact #icon{
+    font-size: 33px;
+    margin: 10px;
+    margin-left: 0px;
+   
+    color: #00fc71;
+    position: relative;
+    bottom: 75px;
+    
+}
+.contact .adresse , .email, .phone{
+    display: flex;
+    margin: 8px;
+    
+}
+
+ .contactform{
+    position: relative;
+    top: 70px;
+    padding: 0%;
+    margin: 0%;
+   margin-left: auto;
+    text-align: right;
+}
+ .contactform{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    margin-top: px;
+}
+.contactform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    }
+    .contactform .inputbox {
+        position: relative;
+        width: 100%;
+        margin-top: 0px;
+        z-index: 1;
+    
+    }
+    .contactform .inputbox input,
+    .contactform .inputbox textarea
+    {
+        width: 100%;
+        padding:5px 0 ;
+        font-size: 16 px;
+        margin : 10px 0;
+        border:none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    
+    }
+    .contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    
+    padding:5px 0 ;
+    font-size: 16 px;
+    margin : 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color:#666;
+    
+    }
+    
+    .contactform .inputbox input:focus ~ span,
+    .contactform .inputbox input:valid ~ span,
+    .contactform .inputbox textarea:focus ~ span,
+    .contactform .inputbox textarea:valid ~ span
+    
+    {
+        color: #e91e63;
+        font-size: 12px;
+    transform: translateY(-20px)
+    }
+    .contactform .inputbox input[type="submit"]{
+        width: 100px;
+        background: #00bcd4;
+        color:#fff;
+        border: none;
+        cursor:pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+/* //////////////////////////////////////////////////////Responsive //////////////////////////////////////////////////////////////////*/
+@media (max-width: 980px) {
+    header nav .link {
+        position: absolute;
+        top: 100%;
+        right: -420px;
+        flex-direction: column;
+        background-color: black;
+        border-left: 1px solid #444444a8;
+        width: 400px;
+        height: 100vh;
+        text-align: center;
+        padding: 20px 0;
+        transition: right 0.3s ease-in-out;
+    }
+
+    header nav .link.active {
+        right: 0%;
+    }
+
+   
+
+    #btnmenu {
+        display: block;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .hero-sec {
+        height: auto;
+    }
+
+    .hero-sec .container {
+        flex-direction: column;
+    }
+
+    .hero-sec .container .div-text {
+        width: 80%;
+        margin: 150px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .hero-sec .container .div-img {
+        position: relative;
+        width: 50%;
+    }
+
+    .hero-sec .container h1 {
+        font-size: 40px;
+    }
+
+    .hero-sec .container .div-text span {
+        font-size: 20px;
+    }
+    .education-row{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    .education {
+        height: 77rem;
+        background: url(IMAGE/wlc-bg1.jpg) no-repeat center center;
+        background-size: cover;
+        color: #fff;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .education h2 {
+        display: none;
+    }
+    .education-column h4 {
+        font-size:xx-large;
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+    }
+    .education-row {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        /* flex-direction: row; */
+        pading-right: 00px;
+        /* position: relative; */
+        /* width: 50px; */
+        margin-right: 58px;
+        padding-bottom: 168px;
+        /* background-color: black; */
+    }
+    .education-column {
+        margin-left: 201px;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        gap: 3px;
+        width: 63%;
+        position: relative;
+        padding-top: 1%;
+        margin-bottom: -174px;
+        margin-top: 137px;
+    }
+    .education-box {
+        border-left: 4px solid #00fc71;
+        padding-left: 26px;
+        position: relative;
+        margin-left: -15px;
+        padding-right: 0px;
+        margin-bottom: -2px;
+    }
+    .education-content {
+        margin-bottom: 40px;
+        padding: 19px;
+        border: 1px solid #00fc71;
+        border-radius: 78px;
+        text-align: center;
+        transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .box1, .box2 {
+        position: relative;
+        width: 72%;
+        height: 0%;
+        margin: 17px;
+        padding: 12px 15px;
+        border: 2px solid #00fc71;
+        border-radius: 10px;
+    }
+    .box1 {
+        margin-bottom: 0px;
+        border-bottom: none;
+    }
+    .box2 {
+        margin-top: 0px;
+        border-top: none;
+    }
+    .box {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding:  40px;
+        margin-left: 17%;
+        margin-right: 0%;
+    }
+    .hero-sec .container .div-img img {
+        width: 130%;
+        position: relative;
+        /* top: 649px; */
+        height: 97%;
+        margin-top: 45px;
+    }
+    .hero-sec .container .div-text p {
+        color: #c8c6c6;
+        font-size: 40px;
+        margin: 10px 0 50px;
+        line-height: 1.7;
+    }
+    .hero-sec .container h1 {
+        font-size: 74px;
+        margin: 66px 0px;
+    }
+    .hero-sec .container .div-text span {
+        display: inline-block;
+        animation: backgroundSlide 7s infinite;
+        background-size: 200%;
+        background-image: linear-gradient(90deg, #00fc71, #000000);
+        background-clip: text;
+        color: transparent;
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .hero-sec .container .div-text .btn {
+        color: #fff;
+        border: 1px solid #00fc71;
+        background-color: #00fc71;
+        padding: 16px 71px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .hero-sec .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .education-column h4 {
+        font-size: 51px;
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+    }
+    .content {
+        padding: 12px;
+        font-size: 22px;
+    }
+    .content p {
+        margin: 28px 0 0;
+        color: #ccc;
+        font-size: 29px;
+    }
+    .education-content {
+        margin-bottom: 40px;
+        padding: 19px;
+        border: 2px solid #00fc71;
+        border-radius: 78px;
+        text-align: center;
+        transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .education{
+        height: 100vh;
+    }
+    .box h3 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 27px;
+        margin-top: 102px;
+        font-size: 42px;
+    }
+    .lang h2 {
+        text-align: center;
+        font-size: 80px;
+        color: #00fc71;
+        padding: 11px;
+    }
+    .box1 {
+        margin-bottom: 4px;
+        /* border-bottom: none; */
+    }
+    .box2 {
+        margin-top: 28px;
+        /* border-top: none; */
+        height: 941px;
+    }
+    .box1, .box2 {
+        position: relative;
+        width: 112%;
+        height: 19%;
+        margin-left: -126px;
+        /* padding: 12px 15px; */
+        border: 7px solid #00fc71;
+        border-radius: 50px;
+    }
+    header nav .logo {
+        color: #fff;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    #btnmenu {
+       
+        font-size: 62px;
+        
+    }
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+        margin: 32px;
+        height: 100%;
+    }
+    header nav .link li {
+        position: relative;
+        margin: 41px 34px;
+        height: 98px;
+        line-height: 80px;
+        list-style: none;
+    }
+    header nav .link li a {
+       
+        font-size: 41px;
+    }
+    .education{
+        height: 90vh;
+    }
+    .home .social-links{
+        display: none;
+    }
+    .education-content {
+        
+        border: 4px solid #00fc71;
+        
+    }
+    .contactform .inputbox input, .contactform .inputbox textarea {
+       
+        margin: 12px 0;
+       
+    }
+    .contactform h2 {
+        font-size: 49px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 55px;
+    }
+    .contactform {
+        width: 100%;
+        padding: 188px 27px;
+        background: white;
+        margin-top: px;
+        /* margin: 1px; */
+        position: relative;
+        height: 700px;
+        top: 100px;
+    }
+    .contact {
+        background: url(IMAGE/wlc-bg1.jpg);
+        color: white;
+        height: 91vh;
+    }
+    .contactform {
+        width: 100%;
+        padding: 120px 27px;
+        background: white;
+        margin-top: px;
+        /* margin: 1px; */
+        position: relative;
+        height: 700px;
+        top: 160px;
+    }
+    .contactform h2 {
+        font-size: 49px;
+        color: #333;
+        font-weight: 500;
+        margin-bottom: 55px;
+    }
+    .contactform .inputbox input, .contactform .inputbox textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16 px;
+        margin: 12px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    .contact .cont-icon {
+        position: relative;
+        bottom: -300px;
+        margin: px;
+    }
+    .contact .cont-icon {
+        position: relative;
+        bottom: -300px;
+        margin: px;
+    }
+    .contact #icon {
+        font-size: 87px;
+        margin: 10px;
+        margin-left: 0px;
+        color: #00fc71;
+        position: relative;
+        bottom: 75px;
+    }
+    .contact .cont-icon h3 {
+        font-size: 54px;
+        position: relative;
+        margin-left: 10px;
+        bottom: 70px;
+        color: #afafaf;
+        margin-bottom: 92px;
+    }
+    .contactform .inputbox {
+        position: relative;
+        width: 100%;
+        margin-top: 46px;
+        z-index: 1;
+    }
+    .contact .social-links a {
+        font-size: 87px;
+        margin: 54px;
+        color: #00fc71;
+        transition: .3ms;
+    }
+    .contact .social-links {
+        position: relative;
+        /* bottom: -80px; */
+        transition: 7s;
+        top: 51vh;
+    }
+    .education-box{
+        width: 125%;
+    }
+}
+
+@media(max-width: 450px) {
+    .hero-sec .container h1 {
+        font-size: 25px;
+    }
+
+    .hero-sec .container .div-text span {
+        font-size: 15px;
+    }
+
+    .hero-sec .container .div-text p {
+        font-size: 16px;
+    }
+
+    .hero-sec .container .div-img {
+        width: 100%;
+    }
+}
+
+@keyframes backgroundSlide {
+    0%, 10%, 100% {
+        background-position: -33rem 0;
+    }
+    65%, 85% {
+        background-position: 0 0;
+    }
+}
+
+.hero-sec .container .div-text span {
+    display: inline-block;
+    animation: backgroundSlide 7s infinite; 
+    background-size: 200%; 
+    background-image: linear-gradient(90deg, #00fc71, #000000); 
+    background-clip: text; 
+    color: transparent; 
+}
+
